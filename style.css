@@ -1,0 +1,306 @@
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(67deg, #000000, #ffffff);
+  animation: gradientAnimation 5s ease infinite;
+  background-image: url('image/background-apple.png');
+}
+
+/* ================================== */
+/* Styles pour la barre rouge en haut */
+.top-bar {
+  background-color: rgb(252, 234, 170);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  z-index: 999;
+}
+
+.top-bar-inner {
+  position: relative;
+  background-color: #a2cbf9;
+  top: 30%;
+  bottom: 30%;
+  width: 200px;
+  height: 50px;
+  z-index: 1000;
+  border-radius: 20px;
+}
+
+#top-bar-1 {
+    margin: auto;
+}
+
+#top-bar-1 p {
+  text-align: center;
+  font-family: 'Calibri', sans-serif;
+  font-size: 16px;
+}
+
+/* script trouver sur internet sur le site https://uiverse.io/Nawsome/purple-mule-73*/
+/* Normal Usage */
+
+.spinner:before {
+  transform: rotateX(60deg) rotateY(45deg) rotateZ(45deg);
+  animation: 750ms rotateBefore infinite linear reverse;
+}
+
+.spinner:after {
+  transform: rotateX(240deg) rotateY(45deg) rotateZ(45deg);
+  animation: 750ms rotateAfter infinite linear;
+}
+
+.spinner:before,
+.spinner:after {
+  box-sizing: border-box;
+  content: '';
+  display: block;
+  position: absolute;
+  width: 9em;
+  height: 9em;
+  top: 0%;
+  left: 10px;
+  z-index: 1000; 
+  transform-style: preserve-3d;
+  transform-origin: 50%;
+  transform: rotateY(50%);
+  perspective-origin: 50% 50%;
+  perspective: 320px;
+  background-size: 10em 10em;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjI2NnB4IiBoZWlnaHQ9IjI5N3B4IiB2aWV3Qm94PSIwIDAgMjY2IDI5NyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczpza2V0Y2g9Imh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaC9ucyI+CiAgICA8dGl0bGU+c3Bpbm5lcjwvdGl0bGU+CiAgICA8ZGVzY3JpcHRpb24+Q3JlYXRlZCB3aXRoIFNrZXRjaCAoaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoKTwvZGVzY3JpcHRpb24+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBza2V0Y2g6dHlwZT0iTVNQYWdlIj4KICAgICAgICA8cGF0aCBkPSJNMTcxLjUwNzgxMywzLjI1MDAwMDM4IEMyMjYuMjA4MTgzLDEyLjg1NzcxMTEgMjk3LjExMjcyMiw3MS40OTEyODIzIDI1MC44OTU1OTksMTA4LjQxMDE1NSBDMjE2LjU4MjAyNCwxMzUuODIwMzEgMTg2LjUyODQwNSw5Ny4wNjI0OTY0IDE1Ni44MDA3NzQsODUuNzczNDM0NiBDMTI3LjA3MzE0Myw3NC40ODQzNzIxIDc2Ljg4ODQ2MzIsODQuMjE2MTQ2MiA2MC4xMjg5MDY1LDEwOC40MTAxNTMgQy0xNS45ODA0Njg1LDIxOC4yODEyNDcgMTQ1LjI3NzM0NCwyOTYuNjY3OTY4IDE0NS4yNzczNDQsMjk2LjY2Nzk2OCBDMTQ1LjI3NzM0NCwyOTYuNjY3OTY4IC0yNS40NDkyMTg3LDI1Ny4yNDIxOTggMy4zOTg0Mzc1LDEwOC40MTAxNTUgQzE2LjMwNzA2NjEsNDEuODExNDE3NCA4NC43Mjc1ODI5LC0xMS45OTIyOTg1IDE3MS41MDc4MTMsMy4yNTAwMDAzOCBaIiBpZD0iUGF0aC0xIiBmaWxsPSIjMDAwMDAwIiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIj48L3BhdGg+CiAgICA8L2c+Cjwvc3ZnPg==);
+}
+/* sitNSpin.less */
+@keyframes rotateBefore {
+  from {transform: rotateX(60deg) rotateY(45deg) rotateZ(0deg);}
+  to {transform: rotateX(60deg) rotateY(45deg) rotateZ(-360deg);}
+}
+
+@keyframes rotateAfter {
+  from {transform: rotateX(240deg) rotateY(45deg) rotateZ(0deg);}
+  to {transform: rotateX(240deg) rotateY(45deg) rotateZ(360deg);}
+}
+
+/* ================================== */
+
+/* Styles pour le menu de navigation en haut à droite */
+.top-right-menu {
+  position: absolute;
+  top: 12%;
+  bottom: 12%; /* Ajustez la distance par rapport à la barre en haut */
+  right: 10px;
+  background-color: rgba(49, 49, 49, 0.748);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  flex-direction: inherit;
+  right: 70px;
+  top: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s;
+}
+
+.menu-list.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu-list li {
+  display: inline;
+  margin: 10px 0;
+}
+
+.menu-list a {
+  text-decoration: none;
+  color: rgb(5, 5, 5);
+  font-weight: bold;
+  right: 10% !important;
+  top: 10%;
+
+}
+
+/* Styles pour le bouton du burger menu */
+.burger-menu {
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  padding: 5px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+/* ================================== */
+
+/* Style pour la section À propos avec image et texte */
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 50px; /* Ajustement de la marge supérieure pour éviter que la carte ne passe derrière la barre */
+  position: relative;
+}
+
+.profile img {
+  max-width: 200px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.profile-text {
+  flex: 1;
+  padding: 0 20px;
+}
+
+/* ================================== */
+
+.card {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  max-width: 600px;
+  position: relative; /* Correction de la propriété 'position' */
+  padding: 50px;
+  margin: 40px;
+  top: 0; /* Spécifiez la valeur 'top' ici */
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: rgba(191, 191, 191, 0.44);
+}
+
+/* Effet de transformation (scale) au survol */
+.card:hover {
+  transform: scale(1.05); /* Agrandit la carte de 5% */
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2); /* Ajoute une ombre plus prononcée */
+}
+
+#propos {
+  margin-top: 300px;
+}
+
+
+/* ================================== */
+
+/* Style pour l'image */
+img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 50%;
+  max-width: 200px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Style pour le paragraphe de description */
+.M {
+  font-size: 18px;
+  text-align: center;
+  margin: 20px;
+  color: #344138;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+a {
+  text-decoration: none;
+  color: #000; /* Modifier la couleur en noir (#000) */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #4a90e2;
+}
+
+a[target="_blank"]::after {
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px;
+  color: #78d3f4;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+li {
+  margin: 10px;
+  align-content: center;
+}
+
+.links-list i {
+  color: rgb(230, 230, 230) !important;
+}
+
+.links-list i:hover {
+  color: black !important;
+}
+
+
+ul li a {
+  color: #000000;
+  font-weight: normal;
+}
+
+
+
+
+.ee-card {
+  perspective: 1000px; /* Pour créer une perspective 3D */
+  position: relative;
+  width: 200px; /* Ajustez la largeur au besoin */
+  height: 200px; /* Ajustez la hauteur au besoin */
+}
+
+.ee-card .ee-front,
+.ee-card .ee-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.5s ease;
+}
+
+.ee-card .ee-front {
+  transform: rotateY(0deg); /* L'état initial (recto) */
+}
+
+.ee-card .ee-back {
+  transform: rotateY(180deg); /* L'état caché (verso) */
+  background: #fff; /* Couleur de fond pour le verso, ajoutez d'autres styles au besoin */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ee-card:hover .ee-front {
+  transform: rotateY(-180deg); /* Au survol, effectue la rotation pour révéler le verso */
+}
+
+.ee-card:hover .ee-back {
+  transform: rotateY(0deg); /* Au survol, effectue la rotation pour afficher le recto */
+}
+
+#ee-p {
+  text-align: center;
+}
