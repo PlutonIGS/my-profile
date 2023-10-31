@@ -7,7 +7,7 @@ body {
   justify-content: center;
   background: linear-gradient(67deg, #000000, #ffffff);
   animation: gradientAnimation 5s ease infinite;
-  background-image: url('image/background-apple.png');
+  background-image: url('background-apple.png');
 }
 
 /* ================================== */
